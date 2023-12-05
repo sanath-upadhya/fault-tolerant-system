@@ -200,7 +200,7 @@ public class MyDBFaultTolerantServerZK extends server.MyDBSingleServer implement
             }
         } else {
 			if (path != null && path.equals("/leader")) {
-				zooKeeper.addWatch(path, chainedWatcher, null);
+				//zooKeeper.addWatch(path, chainedWatcher, null);
 				// Something has changed on the node, let's find out
 				if (event.getType() == Event.EventType.NodeDataChanged) {
 					// Znode data changed, handle the event
